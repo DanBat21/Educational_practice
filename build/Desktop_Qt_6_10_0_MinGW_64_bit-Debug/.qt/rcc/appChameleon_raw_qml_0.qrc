@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/Chameleon/">
+    <file alias="Main.qml">D:/Qt/cpp/projectsQt/Chameleon/Main.qml</file>
+  </qresource>
+</RCC>
+

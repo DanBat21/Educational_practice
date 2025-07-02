@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="/qt/qml/Chameleon">D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/Chameleon</file>
+
+  </qresource>
+</RCC>

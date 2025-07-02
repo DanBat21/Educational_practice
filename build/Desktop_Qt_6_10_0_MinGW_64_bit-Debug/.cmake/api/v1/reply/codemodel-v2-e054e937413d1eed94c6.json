@@ -1,0 +1,196 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-ceae3638407540f35189.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Chameleon",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-a80a2f2c60c8057e5da8.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-83555bdc1b9d2c81e0e8.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-5050c42465133d56bb1e.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-8de7d8631e8ea9d1c018.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-b02fbf928bb7045f3e79.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon-Debug-04ec0e5af1bf4fada24a.json",
+					"name" : "appChameleon",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_autogen-Debug-7e13b518893f3518419c.json",
+					"name" : "appChameleon_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_autogen_timestamp_deps-Debug-69f2c5c08d4d8e4679ff.json",
+					"name" : "appChameleon_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_copy_qml::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_copy_qml-Debug-151caf1f5f63a2795061.json",
+					"name" : "appChameleon_copy_qml",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_copy_res::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_copy_res-Debug-a29c4cbed588da714649.json",
+					"name" : "appChameleon_copy_res",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_qmlimportscan-Debug-f8379197a7241cbe6c7c.json",
+					"name" : "appChameleon_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_qmllint-Debug-427cc397905ed67aff24.json",
+					"name" : "appChameleon_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_qmllint_json-Debug-84dfc286681cde922621.json",
+					"name" : "appChameleon_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_qmllint_module-Debug-54145ee34ce9583bd35d.json",
+					"name" : "appChameleon_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appChameleon_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appChameleon_qmltyperegistration-Debug-9fa3a2928a0f46dc0af1.json",
+					"name" : "appChameleon_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appChameleon_aotstats_target::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appChameleon_aotstats_target-Debug-ebca6bde82c528139036.json",
+					"name" : "module_appChameleon_aotstats_target",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug",
+		"source" : "D:/Qt/cpp/projectsQt/Chameleon"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

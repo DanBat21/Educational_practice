@@ -1,0 +1,5 @@
+module Chameleon
+typeinfo appChameleon.qmltypes
+prefer :/qt/qml/Chameleon/
+Main 1.0 Main.qml
+
