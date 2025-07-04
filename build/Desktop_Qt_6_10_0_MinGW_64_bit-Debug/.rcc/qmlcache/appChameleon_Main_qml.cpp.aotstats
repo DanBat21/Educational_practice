@@ -8,146 +8,202 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 379,
+                            "durationMicroseconds": 191,
                             "functionName": "width",
-                            "line": 17,
+                            "line": 19,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 140,
+                            "durationMicroseconds": 58,
                             "functionName": "horizontalCenter",
-                            "line": 20,
+                            "line": 22,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 94,
+                            "durationMicroseconds": 38,
                             "functionName": "top",
-                            "line": 21,
+                            "line": 23,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 97,
+                            "durationMicroseconds": 41,
                             "functionName": "bottom",
-                            "line": 23,
+                            "line": 25,
                             "message": ""
                         },
                         {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 118,
+                            "durationMicroseconds": 33,
                             "functionName": "fillMode",
-                            "line": 32,
-                            "message": "Cannot load property Image from const QMetaObject."
+                            "line": 39,
+                            "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 74,
+                            "durationMicroseconds": 21,
                             "functionName": "fill",
                             "line": 30,
                             "message": ""
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 39,
-                            "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 35,
-                            "message": "Could not find property \"horizontalCenter\"."
-                        },
-                        {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 36,
                             "functionName": "top",
-                            "line": 36,
-                            "message": "Could not find property \"top\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 90,
-                            "functionName": "width",
-                            "line": 49,
+                            "line": 31,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 92,
-                            "functionName": "horizontalCenter",
-                            "line": 44,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 33,
-                            "durationMicroseconds": 89,
+                            "column": 29,
+                            "durationMicroseconds": 34,
                             "functionName": "bottom",
-                            "line": 47,
+                            "line": 33,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 28,
+                            "durationMicroseconds": 33,
+                            "functionName": "right",
+                            "line": 35,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 96,
-                            "functionName": "wrapMode",
-                            "line": 58,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 86,
-                            "functionName": "width",
-                            "line": 59,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 63,
-                            "functionName": "horizontalAlignment",
-                            "line": 61,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 32,
-                            "durationMicroseconds": 680,
-                            "functionName": "onTextChanged",
-                            "line": 62,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 86,
-                            "functionName": "fill",
-                            "line": 56,
+                            "durationMicroseconds": 34,
+                            "functionName": "left",
+                            "line": 37,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 39,
+                            "column": 24,
                             "durationMicroseconds": 0,
-                            "functionName": "horizontalCenter",
-                            "line": 71,
-                            "message": "Could not find property \"horizontalCenter\"."
+                            "functionName": "onClicked",
+                            "line": 51,
+                            "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 29,
                             "durationMicroseconds": 0,
                             "functionName": "bottom",
-                            "line": 72,
+                            "line": 43,
                             "message": "Could not find property \"bottom\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 45,
+                            "message": "Could not find property \"right\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 47,
+                            "functionName": "width",
+                            "line": 61,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 33,
+                            "durationMicroseconds": 36,
+                            "functionName": "bottom",
+                            "line": 57,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 31,
+                            "functionName": "left",
+                            "line": 59,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 27,
+                            "functionName": "wrapMode",
+                            "line": 70,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 25,
+                            "functionName": "width",
+                            "line": 71,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 38,
+                            "durationMicroseconds": 22,
+                            "functionName": "horizontalAlignment",
+                            "line": 73,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 32,
+                            "durationMicroseconds": 306,
+                            "functionName": "onTextChanged",
+                            "line": 74,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 22,
+                            "functionName": "fill",
+                            "line": 68,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 29,
+                            "durationMicroseconds": 0,
+                            "functionName": "bottom",
+                            "line": 83,
+                            "message": "Could not find property \"bottom\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 0,
+                            "functionName": "right",
+                            "line": 85,
+                            "message": "Could not find property \"right\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 25,
+                            "durationMicroseconds": 40,
+                            "functionName": "nameFilters",
+                            "line": 94,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 24,
+                            "durationMicroseconds": 96,
+                            "functionName": "onAccepted",
+                            "line": 95,
+                            "message": ""
                         }
                     ],
                     "filePath": "D:/Qt/cpp/projectsQt/Chameleon/Main.qml"

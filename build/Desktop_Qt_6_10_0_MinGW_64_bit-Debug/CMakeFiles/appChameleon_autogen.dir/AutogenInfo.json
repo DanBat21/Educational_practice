@@ -785,7 +785,15 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "appChameleon_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"D:/Qt/cpp/projectsQt/Chameleon/imageinfo.h",
+			"MU",
+			"EWIEGA46WW/moc_imageinfo.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include",
 	"MOC_COMPILATION_FILE" : "D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/mocs_compilation.cpp",
@@ -879,6 +887,7 @@
 	"SETTINGS_FILE" : "D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/CMakeFiles/appChameleon_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/Qt/cpp/projectsQt/Chameleon/imageinfo.cpp", "MU", null ],
 		[ "D:/Qt/cpp/projectsQt/Chameleon/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
