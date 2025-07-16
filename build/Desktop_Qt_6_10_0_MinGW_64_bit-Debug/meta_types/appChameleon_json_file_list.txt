@@ -1,0 +1,2 @@
+D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include/../EWIEGA46WW/moc_codingtext.cpp.json
+D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include/../EWIEGA46WW/moc_imageinfo.cpp.json

@@ -1,2 +1,186 @@
 [
+    {
+        "classes": [
+            {
+                "className": "CodingText",
+                "lineNumber": 9,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "text",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "image",
+                                "type": "QImage"
+                            },
+                            {
+                                "name": "param",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "coding",
+                        "returnType": "QImage"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "CodingText",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "codingChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "codingtext.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "ImageInfo",
+                "lineNumber": 12,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "filepath",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 4,
+                        "name": "setImage",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "savePath",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "codingAndSave",
+                        "returnType": "bool"
+                    }
+                ],
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 0,
+                        "name": "codingSymbols",
+                        "notify": "imageChanged",
+                        "read": "getCodingSymbols",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 1,
+                        "name": "codingText",
+                        "notify": "codingTextChanged",
+                        "read": "getCodingText",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setCodingText"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 2,
+                        "name": "bits",
+                        "notify": "bitsChanged",
+                        "read": "getBits",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setBits"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": false,
+                        "index": 3,
+                        "name": "imagePath",
+                        "notify": "imageChanged",
+                        "read": "getImagePath",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false
+                    }
+                ],
+                "qualifiedClassName": "ImageInfo",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "imageChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "name": "codingTextChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 2,
+                        "name": "bitsChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "finish",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 3,
+                        "name": "codingFinished",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "imageinfo.h",
+        "outputRevision": 69
+    }
 ]

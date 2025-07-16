@@ -1,9 +1,9 @@
 import QtQuick
 import QtQml
 import QtQuick.Controls
-import QtQuick.Controls 2.15
 import QtQuick.Layouts
 import QtQuick.Dialogs
+import imageInfo
 
 Window {
     id: root
@@ -66,12 +66,13 @@ Window {
     TextEdit{
                 id: txt
                 anchors.fill: field
-                //text: "После одного из заседаний мирового съезда судьи собрались в совещательной комнате, чтобы снять свои мундиры, минутку отдохнуть и ехать домой обедать."
+                text: _imageInfo.codingText
                 wrapMode: TextEdit.Wrap
                 width: field.width
                 textMargin: 4
                 horizontalAlignment: TextEdit.AlignJustify
                 onTextChanged: {
+                        _imageInfo.codingText = text
                             var pos = txt.positionAt(1, field.height + 1);
                             if(txt.length >= pos)
                             {
@@ -87,15 +88,82 @@ Window {
             width: 150
             height: 30
             text: "Закодировать текст"
+
+            onClicked: {
+                fileDialog1.open()
+            }
         }
+
     FileDialog{
            id: fileDialog;
            title: "Выберите изображение";
            nameFilters: ["Image Files (*.png)"];
            onAccepted: {
                image.source = fileDialog.selectedFile
+               _imageInfo.setImage(fileDialog.selectedFile)
            }
        }
 
- }
+    FileDialog {
+           id: fileDialog1
+           title: "save изображение";
+            nameFilters: ["Image Files (*.png)"];
+            defaultSuffix: "png"
+           fileMode: FileDialog.SaveFile
+           onAccepted: {
+                console.log("Selected save path:", selectedFile)
+               _imageInfo.codingAndSave(selectedFile)
+
+            }
+       }
+
+
+    Text{
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 140
+            anchors.left: parent.left
+            anchors.leftMargin: 40
+            //anchors.centerIn: parent
+            text: "Возможно закодировать символов: " + _imageInfo.codingSymbols
+        }
+
+Connections {
+    target: _imageInfo
+    function onCodingFinished(finish) {
+        if (finish) {
+            console.log("Изображение успешно сохранено")
+        } else {
+            console.log("Ошибка сохранения")
+        }
+    }
+}
+
+Text{
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 140
+        anchors.left: parent.left
+        anchors.leftMargin: 420
+        //anchors.centerIn: parent
+        text: "Кодируемых битов: "
+    }
+
+SpinBox {
+    id: bitSpinBox
+    from: 1
+    to: 4
+    value: _imageInfo.bits
+    stepSize: 1
+    anchors.right: parent.right
+    anchors.rightMargin: 50
+    anchors.bottom: parent.bottom
+    anchors.bottomMargin: 137
+    width: 60
+
+    onValueChanged: {
+        _imageInfo.bits = value
+    }
+}
+}
+
+
 
