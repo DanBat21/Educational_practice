@@ -37,6 +37,8 @@ public:
     Q_INVOKABLE void setImage(QString filepath);
 
     Q_INVOKABLE bool codingAndSave(const QString& savePath);
+    Q_INVOKABLE bool decodingAndDisplay();
+
 
 
 private:

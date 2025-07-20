@@ -12,6 +12,20 @@ namespace _qt_qml_Chameleon_Main_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_Chameleon_DecodePage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_Chameleon_EncodePage_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -27,6 +41,8 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Chameleon/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_Chameleon_Main_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Chameleon/DecodePage.qml"), &QmlCacheGeneratedCode::_qt_qml_Chameleon_DecodePage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/Chameleon/EncodePage.qml"), &QmlCacheGeneratedCode::_qt_qml_Chameleon_EncodePage_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

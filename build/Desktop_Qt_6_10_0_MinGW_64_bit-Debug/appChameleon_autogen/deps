@@ -927,6 +927,8 @@ appChameleon_autogen/timestamp: \
 	D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/moc_predefs.h \
 	D:/Qt/cpp/projectsQt/Chameleon/codingtext.cpp \
 	D:/Qt/cpp/projectsQt/Chameleon/codingtext.h \
+	D:/Qt/cpp/projectsQt/Chameleon/decodingtext.cpp \
+	D:/Qt/cpp/projectsQt/Chameleon/decodingtext.h \
 	D:/Qt/cpp/projectsQt/Chameleon/imageinfo.cpp \
 	D:/Qt/cpp/projectsQt/Chameleon/imageinfo.h \
 	D:/Qt/cpp/projectsQt/Chameleon/main.cpp \

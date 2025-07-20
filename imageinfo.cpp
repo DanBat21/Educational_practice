@@ -1,5 +1,6 @@
 #include "imageinfo.h"
 #include "codingtext.h"
+#include "decodingtext.h"
 
 
 
@@ -45,6 +46,27 @@ bool ImageInfo::codingAndSave(const QString &savePath) {
     bool finish = encoded.save(QUrl(savePath).toLocalFile());
     emit codingFinished(finish);
     return finish;
+}
+
+bool ImageInfo::decodingAndDisplay() {
+    setCodingText("");
+
+    if (_image.isNull()) {
+        qDebug() << "No image loaded for decoding";
+        return false;
+    }
+
+    DecodingText decoder;
+
+    QString decodedText = decoder.decoding(_image);
+
+    setCodingText(decodedText);
+    //_codingText = decodedText;
+    //emit codingTextChanged();
+
+    qDebug() << "Decoded Text: " << decodedText;
+
+    return true;
 }
 
 Q_INVOKABLE void ImageInfo::setImage(QString filepath)

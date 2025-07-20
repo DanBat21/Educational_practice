@@ -794,6 +794,12 @@
 			null
 		],
 		[
+			"D:/Qt/cpp/projectsQt/Chameleon/decodingtext.h",
+			"MU",
+			"EWIEGA46WW/moc_decodingtext.cpp",
+			null
+		],
+		[
 			"D:/Qt/cpp/projectsQt/Chameleon/imageinfo.h",
 			"MU",
 			"EWIEGA46WW/moc_imageinfo.cpp",
@@ -879,6 +885,8 @@
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_qml_0.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_res_0.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Chameleon.cpp",
+		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_DecodePage_qml.cpp",
+		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_EncodePage_qml.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_Main_qml.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_qmlcache_loader.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appchameleon_qmltyperegistrations.cpp"
@@ -894,6 +902,7 @@
 	"SOURCES" : 
 	[
 		[ "D:/Qt/cpp/projectsQt/Chameleon/codingtext.cpp", "MU", null ],
+		[ "D:/Qt/cpp/projectsQt/Chameleon/decodingtext.cpp", "MU", null ],
 		[ "D:/Qt/cpp/projectsQt/Chameleon/imageinfo.cpp", "MU", null ],
 		[ "D:/Qt/cpp/projectsQt/Chameleon/main.cpp", "MU", null ]
 	],
@@ -904,6 +913,8 @@
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_qml_0.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_res_0.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Chameleon.cpp",
+		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_DecodePage_qml.cpp",
+		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_EncodePage_qml.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_Main_qml.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_qmlcache_loader.cpp",
 		"D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appchameleon_qmltyperegistrations.cpp"

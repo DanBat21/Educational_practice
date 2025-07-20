@@ -19,6 +19,11 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
 
     QColor color = image.pixelColor(x, y);
 
+    // Значение каналов перед записью
+            qDebug() << "Before encoding: Pixel(" << x << "," << y << ")"
+        << "Channel:" << channel
+        << "R:" << color.red() << "G:" << color.green() << "B:" << color.blue();
+
     int channelValue;
     if (channel == 0)
         channelValue = color.red();
@@ -27,6 +32,7 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
     else
         channelValue = color.blue();
 
+    qDebug() << "Channel Value to write: " << channelValue;
 
     int newBits = 0;
     int weight = 1;
@@ -46,6 +52,9 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
         color.setGreen(result);
     else if (channel == 2)
         color.setBlue(result);
+
+    qDebug() << "After encoding: Pixel(" << x << "," << y << ")"
+             << "New Color - R:" << color.red() << "G:" << color.green() << "B:" << color.blue();
 
     image.setPixelColor(x, y, color);
 }

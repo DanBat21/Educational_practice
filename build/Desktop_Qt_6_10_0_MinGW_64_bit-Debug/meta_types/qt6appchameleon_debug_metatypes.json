@@ -50,6 +50,66 @@
     {
         "classes": [
             {
+                "className": "DecodingText",
+                "lineNumber": 7,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "image",
+                                "type": "QImage"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "decoding",
+                        "returnType": "QString"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "index",
+                                "type": "int"
+                            },
+                            {
+                                "name": "image",
+                                "type": "QImage&"
+                            },
+                            {
+                                "name": "bitsPerChannel",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 2,
+                        "name": "getImageBits",
+                        "returnType": "QBitArray"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "DecodingText",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "name": "decodingChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "decodingtext.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
                 "className": "ImageInfo",
                 "lineNumber": 12,
                 "methods": [
@@ -75,6 +135,12 @@
                         ],
                         "index": 5,
                         "name": "codingAndSave",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "decodingAndDisplay",
                         "returnType": "bool"
                     }
                 ],

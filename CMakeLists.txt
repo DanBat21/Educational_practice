@@ -20,6 +20,9 @@ qt_add_qml_module(appChameleon
         RESOURCES images/forest.png
         SOURCES imageinfo.h imageinfo.cpp
         SOURCES codingtext.h codingtext.cpp
+        QML_FILES DecodePage.qml
+        QML_FILES EncodePage.qml
+        SOURCES decodingtext.h decodingtext.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

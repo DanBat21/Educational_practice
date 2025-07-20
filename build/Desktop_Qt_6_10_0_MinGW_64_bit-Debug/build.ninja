@@ -47,7 +47,7 @@ cmake_ninja_workdir = D$:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_Mi
 #############################################
 # Order-only phony target for appChameleon
 
-build cmake_object_order_depends_target_appChameleon: phony || .qt/rcc/qrc_appChameleon_raw_qml_0.cpp .qt/rcc/qrc_appChameleon_raw_res_0.cpp .qt/rcc/qrc_qmake_Chameleon.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats .rcc/qmlcache/appChameleon_qmlcache_loader.cpp Chameleon/appChameleon.qmltypes appChameleon_autogen appChameleon_autogen/mocs_compilation.cpp appChameleon_autogen/timestamp appChameleon_autogen_timestamp_deps appChameleon_copy_qml appChameleon_copy_res appChameleon_qmlimportscan appchameleon_qmltyperegistrations.cpp meta_types/appChameleon_json_file_list.txt meta_types/appChameleon_json_file_list.txt.timestamp meta_types/qt6appchameleon_debug_metatypes.json meta_types/qt6appchameleon_debug_metatypes.json.gen
+build cmake_object_order_depends_target_appChameleon: phony || .qt/rcc/qrc_appChameleon_raw_qml_0.cpp .qt/rcc/qrc_appChameleon_raw_res_0.cpp .qt/rcc/qrc_qmake_Chameleon.cpp .rcc/qmlcache/appChameleon_DecodePage_qml.cpp .rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_EncodePage_qml.cpp .rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats .rcc/qmlcache/appChameleon_qmlcache_loader.cpp Chameleon/appChameleon.qmltypes appChameleon_autogen appChameleon_autogen/mocs_compilation.cpp appChameleon_autogen/timestamp appChameleon_autogen_timestamp_deps appChameleon_copy_qml appChameleon_copy_res appChameleon_qmlimportscan appchameleon_qmltyperegistrations.cpp meta_types/appChameleon_json_file_list.txt meta_types/appChameleon_json_file_list.txt.timestamp meta_types/qt6appchameleon_debug_metatypes.json meta_types/qt6appchameleon_debug_metatypes.json.gen
 
 build CMakeFiles/appChameleon.dir/appChameleon_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appChameleon_unscanned_Debug D$:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appChameleon
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -97,6 +97,14 @@ build CMakeFiles/appChameleon.dir/codingtext.cpp.obj: CXX_COMPILER__appChameleon
   OBJECT_DIR = CMakeFiles\appChameleon.dir
   OBJECT_FILE_DIR = CMakeFiles\appChameleon.dir
 
+build CMakeFiles/appChameleon.dir/decodingtext.cpp.obj: CXX_COMPILER__appChameleon_unscanned_Debug D$:/Qt/cpp/projectsQt/Chameleon/decodingtext.cpp || cmake_object_order_depends_target_appChameleon
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appChameleon.dir\decodingtext.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -ID:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include -ID:/Qt/cpp/projectsQt/Chameleon -isystem C:/Qt1/6.10.0/mingw_64/include/QtQml -isystem C:/Qt1/6.10.0/mingw_64/include -isystem C:/Qt1/6.10.0/mingw_64/include/QtCore -isystem C:/Qt1/6.10.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlIntegration -isystem C:/Qt1/6.10.0/mingw_64/include/QtNetwork -isystem C:/Qt1/6.10.0/mingw_64/include/QtQuick -isystem C:/Qt1/6.10.0/mingw_64/include/QtGui -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlMeta -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlModels -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt1/6.10.0/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appChameleon.dir
+  OBJECT_FILE_DIR = CMakeFiles\appChameleon.dir
+
 build CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_qmlcache_loader.cpp.obj: CXX_COMPILER__appChameleon_unscanned_Debug D$:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_qmlcache_loader.cpp || cmake_object_order_depends_target_appChameleon
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appChameleon.dir\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.rcc\qmlcache\appChameleon_qmlcache_loader.cpp.obj.d
@@ -108,6 +116,22 @@ build CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rc
 build CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_Main_qml.cpp.obj: CXX_COMPILER__appChameleon_unscanned_Debug D$:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_Main_qml.cpp || cmake_object_order_depends_target_appChameleon
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appChameleon.dir\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.rcc\qmlcache\appChameleon_Main_qml.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -ID:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include -ID:/Qt/cpp/projectsQt/Chameleon -isystem C:/Qt1/6.10.0/mingw_64/include/QtQml -isystem C:/Qt1/6.10.0/mingw_64/include -isystem C:/Qt1/6.10.0/mingw_64/include/QtCore -isystem C:/Qt1/6.10.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlIntegration -isystem C:/Qt1/6.10.0/mingw_64/include/QtNetwork -isystem C:/Qt1/6.10.0/mingw_64/include/QtQuick -isystem C:/Qt1/6.10.0/mingw_64/include/QtGui -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlMeta -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlModels -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt1/6.10.0/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appChameleon.dir
+  OBJECT_FILE_DIR = CMakeFiles\appChameleon.dir\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.rcc\qmlcache
+
+build CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_DecodePage_qml.cpp.obj: CXX_COMPILER__appChameleon_unscanned_Debug D$:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_DecodePage_qml.cpp || cmake_object_order_depends_target_appChameleon
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appChameleon.dir\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.rcc\qmlcache\appChameleon_DecodePage_qml.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
+  INCLUDES = -ID:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include -ID:/Qt/cpp/projectsQt/Chameleon -isystem C:/Qt1/6.10.0/mingw_64/include/QtQml -isystem C:/Qt1/6.10.0/mingw_64/include -isystem C:/Qt1/6.10.0/mingw_64/include/QtCore -isystem C:/Qt1/6.10.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlIntegration -isystem C:/Qt1/6.10.0/mingw_64/include/QtNetwork -isystem C:/Qt1/6.10.0/mingw_64/include/QtQuick -isystem C:/Qt1/6.10.0/mingw_64/include/QtGui -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlMeta -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlModels -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt1/6.10.0/mingw_64/include/QtOpenGL
+  OBJECT_DIR = CMakeFiles\appChameleon.dir
+  OBJECT_FILE_DIR = CMakeFiles\appChameleon.dir\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.rcc\qmlcache
+
+build CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_EncodePage_qml.cpp.obj: CXX_COMPILER__appChameleon_unscanned_Debug D$:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_EncodePage_qml.cpp || cmake_object_order_depends_target_appChameleon
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMETA_LIB -DQT_QMLMODELS_LIB -DQT_QMLWORKERSCRIPT_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\appChameleon.dir\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.rcc\qmlcache\appChameleon_EncodePage_qml.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
   INCLUDES = -ID:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/include -ID:/Qt/cpp/projectsQt/Chameleon -isystem C:/Qt1/6.10.0/mingw_64/include/QtQml -isystem C:/Qt1/6.10.0/mingw_64/include -isystem C:/Qt1/6.10.0/mingw_64/include/QtCore -isystem C:/Qt1/6.10.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlIntegration -isystem C:/Qt1/6.10.0/mingw_64/include/QtNetwork -isystem C:/Qt1/6.10.0/mingw_64/include/QtQuick -isystem C:/Qt1/6.10.0/mingw_64/include/QtGui -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlMeta -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlModels -isystem C:/Qt1/6.10.0/mingw_64/include/QtQmlWorkerScript -isystem C:/Qt1/6.10.0/mingw_64/include/QtOpenGL
   OBJECT_DIR = CMakeFiles\appChameleon.dir
@@ -137,7 +161,7 @@ build CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt
 #############################################
 # Link the executable appChameleon.exe
 
-build appChameleon.exe: CXX_EXECUTABLE_LINKER__appChameleon_Debug CMakeFiles/appChameleon.dir/appChameleon_autogen/mocs_compilation.cpp.obj CMakeFiles/appChameleon.dir/main.cpp.obj CMakeFiles/appChameleon.dir/appchameleon_qmltyperegistrations.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Chameleon.cpp.obj CMakeFiles/appChameleon.dir/imageinfo.cpp.obj CMakeFiles/appChameleon.dir/codingtext.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_qmlcache_loader.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_Main_qml.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_qml_0.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_res_0.cpp.obj | C$:/Qt1/6.10.0/mingw_64/lib/libQt6Quick.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6QmlMeta.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6QmlWorkerScript.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6QmlModels.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Qml.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Network.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Gui.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Core.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6EntryPoint.a || appChameleon_autogen appChameleon_autogen_timestamp_deps appChameleon_copy_qml appChameleon_copy_res appChameleon_qmlimportscan
+build appChameleon.exe: CXX_EXECUTABLE_LINKER__appChameleon_Debug CMakeFiles/appChameleon.dir/appChameleon_autogen/mocs_compilation.cpp.obj CMakeFiles/appChameleon.dir/main.cpp.obj CMakeFiles/appChameleon.dir/appchameleon_qmltyperegistrations.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_qmake_Chameleon.cpp.obj CMakeFiles/appChameleon.dir/imageinfo.cpp.obj CMakeFiles/appChameleon.dir/codingtext.cpp.obj CMakeFiles/appChameleon.dir/decodingtext.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_qmlcache_loader.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_Main_qml.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_DecodePage_qml.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_EncodePage_qml.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_qml_0.cpp.obj CMakeFiles/appChameleon.dir/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_res_0.cpp.obj | C$:/Qt1/6.10.0/mingw_64/lib/libQt6Quick.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6QmlMeta.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6QmlWorkerScript.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6QmlModels.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Qml.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Network.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Gui.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6Core.a C$:/Qt1/6.10.0/mingw_64/lib/libQt6EntryPoint.a || appChameleon_autogen appChameleon_autogen_timestamp_deps appChameleon_copy_qml appChameleon_copy_res appChameleon_qmlimportscan
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt1/6.10.0/mingw_64/lib/libQt6Quick.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6QmlMeta.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6QmlWorkerScript.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6QmlModels.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6Qml.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt1/6.10.0/mingw_64/lib/libQt6OpenGL.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6Gui.a  C:/Qt1/6.10.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt1/6.10.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -luser32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -212,13 +236,13 @@ build appChameleon_copy_res: phony CMakeFiles/appChameleon_copy_res .qt/appChame
 #############################################
 # Utility command for module_appChameleon_aotstats_target
 
-build module_appChameleon_aotstats_target: phony CMakeFiles/module_appChameleon_aotstats_target .rcc/qmlcache/module_appChameleon.aotstats .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats appchameleon_qmltyperegistrations.cpp Chameleon/appChameleon.qmltypes appChameleon_qmltyperegistration
+build module_appChameleon_aotstats_target: phony CMakeFiles/module_appChameleon_aotstats_target .rcc/qmlcache/module_appChameleon.aotstats .rcc/qmlcache/appChameleon_DecodePage_qml.cpp .rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_EncodePage_qml.cpp .rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats appchameleon_qmltyperegistrations.cpp Chameleon/appChameleon.qmltypes appChameleon_qmltyperegistration
 
 
 #############################################
 # Utility command for all_aotstats
 
-build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appChameleon.aotstats .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats appchameleon_qmltyperegistrations.cpp Chameleon/appChameleon.qmltypes module_appChameleon_aotstats_target
+build all_aotstats: phony CMakeFiles/all_aotstats .rcc/qmlcache/all_aotstats.aotstats .rcc/qmlcache/all_aotstats.txt .rcc/qmlcache/module_appChameleon.aotstats .rcc/qmlcache/appChameleon_DecodePage_qml.cpp .rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_EncodePage_qml.cpp .rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats appchameleon_qmltyperegistrations.cpp Chameleon/appChameleon.qmltypes module_appChameleon_aotstats_target
 
 
 #############################################
@@ -351,9 +375,27 @@ build .rcc/qmlcache/appChameleon_Main_qml.cpp .rcc/qmlcache/appChameleon_Main_qm
 
 
 #############################################
+# Custom command for .rcc\qmlcache\appChameleon_DecodePage_qml.cpp
+
+build .rcc/qmlcache/appChameleon_DecodePage_qml.cpp .rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/appChameleon_DecodePage_qml.cpp ${cmake_ninja_workdir}.rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmlcachegen.exe D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml .qt/rcc/qmake_Chameleon.qrc .qt/rcc/appChameleon_raw_qml_0.qrc .qt/rcc/appChameleon_raw_res_0.qrc Chameleon/appChameleon.qmltypes Chameleon/qmldir
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug && C:\Qt1\Tools\CMake_64\bin\cmake.exe -E make_directory D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/Chameleon/DecodePage.qml -I D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug -I C:/Qt1/6.10.0/mingw_64/qml -i D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/Chameleon/qmldir --resource D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qmake_Chameleon.qrc --resource D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/appChameleon_raw_qml_0.qrc --resource D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/appChameleon_raw_res_0.qrc --dump-aot-stats --module-id=Chameleon(appChameleon) -o D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_DecodePage_qml.cpp D:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml"
+  DESC = Generating .rcc/qmlcache/appChameleon_DecodePage_qml.cpp, .rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats
+  restat = 1
+
+
+#############################################
+# Custom command for .rcc\qmlcache\appChameleon_EncodePage_qml.cpp
+
+build .rcc/qmlcache/appChameleon_EncodePage_qml.cpp .rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/appChameleon_EncodePage_qml.cpp ${cmake_ninja_workdir}.rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmlcachegen.exe D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml .qt/rcc/qmake_Chameleon.qrc .qt/rcc/appChameleon_raw_qml_0.qrc .qt/rcc/appChameleon_raw_res_0.qrc Chameleon/appChameleon.qmltypes Chameleon/qmldir
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug && C:\Qt1\Tools\CMake_64\bin\cmake.exe -E make_directory D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmlcachegen.exe --bare --resource-path /qt/qml/Chameleon/EncodePage.qml -I D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug -I C:/Qt1/6.10.0/mingw_64/qml -i D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/Chameleon/qmldir --resource D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qmake_Chameleon.qrc --resource D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/appChameleon_raw_qml_0.qrc --resource D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/appChameleon_raw_res_0.qrc --dump-aot-stats --module-id=Chameleon(appChameleon) -o D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/appChameleon_EncodePage_qml.cpp D:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml"
+  DESC = Generating .rcc/qmlcache/appChameleon_EncodePage_qml.cpp, .rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats
+  restat = 1
+
+
+#############################################
 # Custom command for .qt\rcc\qrc_appChameleon_raw_qml_0.cpp
 
-build .qt/rcc/qrc_appChameleon_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appChameleon_raw_qml_0.cpp: CUSTOM_COMMAND D$:/Qt/cpp/projectsQt/Chameleon/Main.qml .qt/rcc/appChameleon_raw_qml_0.qrc C$:/Qt1/6.10.0/mingw_64/bin/rcc.exe || appChameleon_autogen appChameleon_autogen_timestamp_deps appChameleon_copy_qml appChameleon_copy_res appChameleon_qmlimportscan
+build .qt/rcc/qrc_appChameleon_raw_qml_0.cpp | ${cmake_ninja_workdir}.qt/rcc/qrc_appChameleon_raw_qml_0.cpp: CUSTOM_COMMAND D$:/Qt/cpp/projectsQt/Chameleon/Main.qml D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml .qt/rcc/appChameleon_raw_qml_0.qrc C$:/Qt1/6.10.0/mingw_64/bin/rcc.exe || appChameleon_autogen appChameleon_autogen_timestamp_deps appChameleon_copy_qml appChameleon_copy_res appChameleon_qmlimportscan
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug && C:\Qt1\6.10.0\mingw_64\bin\rcc.exe --output D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/qrc_appChameleon_raw_qml_0.cpp --name appChameleon_raw_qml_0 D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/appChameleon_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appChameleon_raw_qml_0
   restat = 1
@@ -397,21 +439,21 @@ build CMakeFiles/appChameleon_qmltyperegistration | ${cmake_ninja_workdir}CMakeF
 #############################################
 # Custom command for CMakeFiles\appChameleon_qmllint
 
-build CMakeFiles/appChameleon_qmllint | ${cmake_ninja_workdir}CMakeFiles/appChameleon_qmllint: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmllint.exe D$:/Qt/cpp/projectsQt/Chameleon/Main.qml .rcc/qmllint/appChameleon.rsp || all_qmltyperegistrations appChameleon_qmltyperegistration
+build CMakeFiles/appChameleon_qmllint | ${cmake_ninja_workdir}CMakeFiles/appChameleon_qmllint: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmllint.exe D$:/Qt/cpp/projectsQt/Chameleon/Main.qml D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml .rcc/qmllint/appChameleon.rsp || all_qmltyperegistrations appChameleon_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmllint.exe @D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmllint/appChameleon.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appChameleon_qmllint_json
 
-build CMakeFiles/appChameleon_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appChameleon_qmllint_json: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmllint.exe D$:/Qt/cpp/projectsQt/Chameleon/Main.qml .rcc/qmllint/appChameleon_json.rsp || all_qmltyperegistrations appChameleon_qmltyperegistration
+build CMakeFiles/appChameleon_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appChameleon_qmllint_json: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmllint.exe D$:/Qt/cpp/projectsQt/Chameleon/Main.qml D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml .rcc/qmllint/appChameleon_json.rsp || all_qmltyperegistrations appChameleon_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmllint.exe @D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmllint/appChameleon_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appChameleon_qmllint_module
 
-build CMakeFiles/appChameleon_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appChameleon_qmllint_module: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmllint.exe D$:/Qt/cpp/projectsQt/Chameleon/Main.qml .rcc/qmllint/appChameleon_module.rsp || all_qmltyperegistrations appChameleon_qmltyperegistration
+build CMakeFiles/appChameleon_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appChameleon_qmllint_module: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmllint.exe D$:/Qt/cpp/projectsQt/Chameleon/Main.qml D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml .rcc/qmllint/appChameleon_module.rsp || all_qmltyperegistrations appChameleon_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmllint.exe @D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmllint/appChameleon_module.rsp"
 
 
@@ -424,7 +466,7 @@ build CMakeFiles/appChameleon_copy_qml | ${cmake_ninja_workdir}CMakeFiles/appCha
 #############################################
 # Custom command for .qt\appChameleon_qml.txt
 
-build .qt/appChameleon_qml.txt | ${cmake_ninja_workdir}.qt/appChameleon_qml.txt: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake D$:/Qt/cpp/projectsQt/Chameleon/Main.qml
+build .qt/appChameleon_qml.txt | ${cmake_ninja_workdir}.qt/appChameleon_qml.txt: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake D$:/Qt/cpp/projectsQt/Chameleon/Main.qml D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug && C:\Qt1\Tools\CMake_64\bin\cmake.exe -DFILES_INFO_PATH=D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/appChameleon_qml.cmake -P C:/Qt1/6.10.0/mingw_64/lib/cmake/Qt6Qml/Qt6QmlCopyFiles.cmake"
   DESC = Copying appChameleon qml sources into build dir
   restat = 1
@@ -454,7 +496,7 @@ build CMakeFiles/module_appChameleon_aotstats_target | ${cmake_ninja_workdir}CMa
 #############################################
 # Custom command for .rcc\qmlcache\module_appChameleon.aotstats
 
-build .rcc/qmlcache/module_appChameleon.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appChameleon.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats .rcc/qmlcache/module_appChameleon.aotstatslist || appChameleon_qmltyperegistration
+build .rcc/qmlcache/module_appChameleon.aotstats | ${cmake_ninja_workdir}.rcc/qmlcache/module_appChameleon.aotstats: CUSTOM_COMMAND .rcc/qmlcache/appChameleon_Main_qml.cpp.aotstats .rcc/qmlcache/appChameleon_DecodePage_qml.cpp.aotstats .rcc/qmlcache/appChameleon_EncodePage_qml.cpp.aotstats .rcc/qmlcache/module_appChameleon.aotstatslist || appChameleon_qmltyperegistration
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmlaotstats.exe aggregate D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/module_appChameleon.aotstatslist D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.rcc/qmlcache/module_appChameleon.aotstats"
   DESC = Generating .rcc/qmlcache/module_appChameleon.aotstats
   restat = 1
@@ -485,7 +527,7 @@ build CMakeFiles/appChameleon_qmlimportscan | ${cmake_ninja_workdir}CMakeFiles/a
 #############################################
 # Custom command for .qt\qml_imports\appChameleon_build.cmake
 
-build .qt/qml_imports/appChameleon_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appChameleon_build.cmake: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_Chameleon.qrc .qt/rcc/appChameleon_raw_qml_0.qrc .qt/rcc/appChameleon_raw_res_0.qrc D$:/Qt/cpp/projectsQt/Chameleon/Main.qml
+build .qt/qml_imports/appChameleon_build.cmake | ${cmake_ninja_workdir}.qt/qml_imports/appChameleon_build.cmake: CUSTOM_COMMAND C$:/Qt1/6.10.0/mingw_64/bin/qmlimportscanner.exe .qt/rcc/qmake_Chameleon.qrc .qt/rcc/appChameleon_raw_qml_0.qrc .qt/rcc/appChameleon_raw_res_0.qrc D$:/Qt/cpp/projectsQt/Chameleon/Main.qml D$:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml D$:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D D:\Qt\cpp\projectsQt\Chameleon && D:\Qt\cpp\projectsQt\Chameleon\build\Desktop_Qt_6_10_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt1/6.10.0/mingw_64/bin/qmlimportscanner.exe @D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/qml_imports/appChameleon_build.rsp"
   DESC = Running qmlimportscanner for appChameleon
   restat = 1

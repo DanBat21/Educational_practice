@@ -5,3 +5,5 @@ D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rc
 --resource
 D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/.qt/rcc/appChameleon_raw_res_0.qrc
 /qt/qml/Chameleon/Main.qml
+/qt/qml/Chameleon/DecodePage.qml
+/qt/qml/Chameleon/EncodePage.qml
