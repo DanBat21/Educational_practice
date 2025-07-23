@@ -1,22 +1,20 @@
-#ifndef DECODINGTEXT_H
-#define DECODINGTEXT_H
-#include <QQmlApplicationEngine>
-#include <QQmlContext>
+#ifndef DECODERTEXT_H
+#define DECODERTEXT_H
 #include <QImage>
+#include <QObject>
+#include <QBitArray>
 
-class DecodingText : public QObject
+class DecoderText : public QObject
 {
     Q_OBJECT
-
 signals:
     void decodingChanged();
 
 public:
-    explicit DecodingText(QObject *parent = nullptr);
+    explicit DecoderText(QObject *parent = nullptr);
 
     Q_INVOKABLE QString decoding(QImage image);
     Q_INVOKABLE QBitArray getImageBits(int index, QImage& image, int bitsPerChannel);
-
 };
 
-#endif // DECODINGTEXT_H
+#endif // DECODERTEXT_H

@@ -1,11 +1,12 @@
-#include "decodingtext.h"
+#include "decodertext.h"
 #include <qbitarray.h>
+#include <QDebug>
 
-DecodingText::DecodingText(QObject *parent)
+DecoderText::DecoderText(QObject *parent)
     : QObject{parent}
 {}
 
-QBitArray DecodingText::getImageBits(int index, QImage& image, int bitsPerChannel)
+QBitArray DecoderText::getImageBits(int index, QImage& image, int bitsPerChannel)
 {
 
     int pixelIndex = index / 3;
@@ -41,7 +42,7 @@ QBitArray DecodingText::getImageBits(int index, QImage& image, int bitsPerChanne
 }
 
 
-QString DecodingText::decoding(QImage img)
+QString DecoderText::decoding(QImage img)
 {
     qDebug() << "Image: " << img.width() << ", " << img.height();
     qDebug() << "Param:";

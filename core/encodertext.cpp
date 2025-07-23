@@ -1,11 +1,11 @@
-#include "codingtext.h"
+#include "encodertext.h"
+#include <QDebug>
 
-
-CodingText::CodingText(QObject *parent)
+EncoderText::EncoderText(QObject *parent)
     : QObject{parent}
 {}
 
-void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
+void EncoderText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
 {
     int pixelIndex = index / 3;
     int channel = index % 3;
@@ -19,9 +19,9 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
 
     QColor color = image.pixelColor(x, y);
 
-            qDebug() << "Before encoding: Pixel(" << x << "," << y << ")"
-        << "Channel:" << channel
-        << "R:" << color.red() << "G:" << color.green() << "B:" << color.blue();
+    qDebug() << "Before encoding: Pixel(" << x << "," << y << ")"
+             << "Channel:" << channel
+             << "R:" << color.red() << "G:" << color.green() << "B:" << color.blue();
 
     int channelValue;
     if (channel == 0)
@@ -42,8 +42,8 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
         weight = weight * 2;
     }
 
-     int clearValue = (channelValue / weight) * weight;
-     int result = clearValue + newBits;
+    int clearValue = (channelValue / weight) * weight;
+    int result = clearValue + newBits;
 
     if (channel == 0)
         color.setRed(result);
@@ -59,7 +59,7 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
 }
 
 
- QImage CodingText::coding(QString text, QImage image, int param)
+QImage EncoderText::coding(QString text, QImage image, int param)
 {
     QImage encodedImage = image.convertToFormat(QImage::Format_RGB32);
 
@@ -139,3 +139,4 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
 
     return encodedImage;
 }
+
