@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 258,
+                            "durationMicroseconds": 179,
                             "functionName": "fill",
                             "line": 18,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 39,
-                            "durationMicroseconds": 66,
+                            "durationMicroseconds": 47,
                             "functionName": "currentIndex",
                             "line": 38,
                             "message": "Cannot retrieve a non-object type by ID: tab1"

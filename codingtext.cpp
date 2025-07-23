@@ -19,7 +19,6 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
 
     QColor color = image.pixelColor(x, y);
 
-    // Значение каналов перед записью
             qDebug() << "Before encoding: Pixel(" << x << "," << y << ")"
         << "Channel:" << channel
         << "R:" << color.red() << "G:" << color.green() << "B:" << color.blue();
@@ -65,7 +64,7 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
     QImage encodedImage = image.convertToFormat(QImage::Format_RGB32);
 
     QByteArray byteArr = text.toUtf8();
-    byteArr.append('\0');
+    //byteArr.append('\0');
 
     QBitArray bits(byteArr.size() * 8);
     for (int i = 0; i < byteArr.size(); i++) {
@@ -86,6 +85,9 @@ void CodingText::writeChanel(int index, QBitArray bitsToWrite, QImage& image)
         bool bit = (messageBitLength >> (23 - i)) & 1;
         headerBits.setBit(4 + i, bit);
     }
+
+    qDebug() << "Message Length: " << messageBitLength;
+
 
     int headerParam = 2;
     int headerGroups = headerBits.size() / headerParam;

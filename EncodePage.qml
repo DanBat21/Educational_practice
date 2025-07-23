@@ -33,9 +33,9 @@ Item {
         }
     Button {
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 63
+            anchors.bottomMargin: 50
             anchors.right: parent.right
-            anchors.rightMargin: 40
+            anchors.rightMargin: 25
             width: 150
             height: 30
             text: "Открыть изображение"
@@ -47,11 +47,11 @@ Item {
     Rectangle {
                 id: field
                 anchors.bottom: parent.bottom
-                anchors.bottomMargin: 60
+                anchors.bottomMargin: 30
                 anchors.left: parent.left
-                anchors.leftMargin: 40
-                width: root.width-240
-                height: 70
+                anchors.leftMargin: 25
+                width: root.width-215
+                height: 100
                 border.color: "#00cec9"
 
             }
@@ -66,17 +66,30 @@ Item {
                 onTextChanged: {
                         _imageInfo.codingText = text
                             var pos = txt.positionAt(1, field.height + 1);
-                            if(txt.length >= pos)
+                            /*if(txt.length >= pos)
                             {
                                 txt.remove(pos, txt.length);
+                            }*/
+                            if(txt.length >=  _imageInfo.codingSymbols)
+                            {
+                                txt.remove( _imageInfo.codingSymbols, txt.length);
                             }
+                            charCount.text = "Число символов: " + txt.text.length
                         }
     }
+    Label {
+                id: charCount
+                text: "Число символов: 0"
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 10
+                anchors.left: parent.left
+                anchors.leftMargin: 40
+            }
     Button {
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 97
+            anchors.bottomMargin: 85
             anchors.right: parent.right
-            anchors.rightMargin: 40
+            anchors.rightMargin: 25
             width: 150
             height: 30
             text: "Закодировать текст"

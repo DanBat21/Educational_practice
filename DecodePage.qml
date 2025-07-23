@@ -63,19 +63,12 @@ Item {
     TextEdit{
                 id: txt
                 anchors.fill: field
-                text: _imageInfo.codingText
+                text: _imageInfo.decodingText
                 wrapMode: TextEdit.Wrap
                 width: field.width
                 textMargin: 4
                 horizontalAlignment: TextEdit.AlignJustify
-                onTextChanged: {
-                        _imageInfo.codingText = text
-                            var pos = txt.positionAt(1, field.height + 1);
-                            if(txt.length >= pos)
-                            {
-                                txt.remove(pos, txt.length);
-                            }
-                        }
+                readOnly: true
     }
     Button {
             anchors.bottom: parent.bottom
@@ -92,6 +85,7 @@ Item {
                        } else {
                            console.log("Ошибка при декодировании");
                        }
+                txt.text = _imageInfo.decodingText;
             }
         }
 

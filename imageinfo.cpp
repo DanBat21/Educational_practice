@@ -6,7 +6,11 @@
 
 ImageInfo::ImageInfo(QObject *parent)
     : QObject{parent}
-{}
+{
+    //DecodingText decoder;
+    //decoder.decoding(QImage("D:/Qt/cpp/projectsQt/Chameleon/images/cod.png"));
+
+}
 
 int ImageInfo::getCodingSymbols()
 {
@@ -14,6 +18,8 @@ int ImageInfo::getCodingSymbols()
 }
 
 QString ImageInfo::getCodingText() { return _codingText; }
+QString ImageInfo::getDecodingText() { return _decodingText; }
+
 int ImageInfo::getBits() { return _bits; }
 QString ImageInfo::getImagePath() { return _imagePath; }
 
@@ -21,6 +27,12 @@ void ImageInfo::setCodingText(const QString &text) {
 
         _codingText = text;
         emit codingTextChanged();
+}
+
+void ImageInfo::setDecodingText(const QString &text) {
+
+    _decodingText = text;
+    emit decodingTextChanged();
 }
 
 void ImageInfo::setBits(int bits) {
@@ -49,7 +61,7 @@ bool ImageInfo::codingAndSave(const QString &savePath) {
 }
 
 bool ImageInfo::decodingAndDisplay() {
-    setCodingText("");
+    //setCodingText("");
 
     if (_image.isNull()) {
         qDebug() << "No image loaded for decoding";
@@ -59,12 +71,7 @@ bool ImageInfo::decodingAndDisplay() {
     DecodingText decoder;
 
     QString decodedText = decoder.decoding(_image);
-
-    setCodingText(decodedText);
-    //_codingText = decodedText;
-    //emit codingTextChanged();
-
-    qDebug() << "Decoded Text: " << decodedText;
+    setDecodingText(decodedText);
 
     return true;
 }

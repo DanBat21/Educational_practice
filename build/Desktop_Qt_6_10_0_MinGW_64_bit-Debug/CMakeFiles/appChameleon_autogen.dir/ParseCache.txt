@@ -397,6 +397,7 @@ D:/Qt/cpp/projectsQt/Chameleon/imageinfo.h
  mdp:C:/Qt1/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
  mdp:D:/Qt/cpp/projectsQt/Chameleon/build/Desktop_Qt_6_10_0_MinGW_64_bit-Debug/appChameleon_autogen/moc_predefs.h
  mdp:D:/Qt/cpp/projectsQt/Chameleon/codingtext.h
+ mdp:D:/Qt/cpp/projectsQt/Chameleon/decodingtext.h
  mdp:D:/Qt/cpp/projectsQt/Chameleon/imageinfo.h
 D:/Qt/cpp/projectsQt/Chameleon/imageinfo.cpp
 D:/Qt/cpp/projectsQt/Chameleon/codingtext.h

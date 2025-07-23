@@ -8,8 +8,10 @@ DecodingText::DecodingText(QObject *parent)
 QBitArray DecodingText::getImageBits(int index, QImage& image, int bitsPerChannel)
 {
 
-    int x = index % image.width();
-    int y = index / image.width();
+    int pixelIndex = index / 3;
+
+    int x = pixelIndex % image.width();
+    int y = pixelIndex / image.width();
 
     QColor color = image.pixelColor(x, y);
     qDebug() << "Извлечение битов из пикселя (" << x << "," << y << ")";
@@ -44,31 +46,41 @@ QString DecodingText::decoding(QImage img)
     qDebug() << "Image: " << img.width() << ", " << img.height();
     qDebug() << "Param:";
 
-    //Беру 4 бита для param R и G
-    auto t1 = getImageBits(0, img, 2);  // 2 бита из R
-    auto t2 = getImageBits(1, img, 2);  // 2 бита G
+    auto t1 = getImageBits(1, img, 2);
+    auto t2 = getImageBits(0, img, 2);
     t1.resize(4);
-    t1.setBit(2, t2.at(0));
-    t1.setBit(3, t2.at(1));
+    t1.setBit(2, t2.at(1));
+    t1.setBit(3, t2.at(0));
 
     int param = t1.toUInt32(QSysInfo::LittleEndian);
     qDebug() << "Decoded param: " << param;
 
     qDebug() << "Text length";
 
-    // Беру 24 бита для length
-    auto b1 = getImageBits(2, img, 2);
-    auto b2 = getImageBits(3, img, 2);
-    b1.resize(4);
-    b1.setBit(2, b2.at(0));
-    b1.setBit(3, b2.at(1));
+    QBitArray lengthBits(24);
+    for (int i = 0; i < 24/2; ++i) {
+        QBitArray ar = getImageBits(2 + i, img, 2);
+        lengthBits.setBit(2*i + 1, ar.at(0));
+        lengthBits.setBit(2*i, ar.at(1));
+    }
 
-    int messageBitLength = b1.toUInt32(QSysInfo::LittleEndian);
-    qDebug() << "Decoded message length: " << messageBitLength;
+    QString lengthBitsStr;
+    for (int i = 0; i < lengthBits.size(); ++i) {
+        lengthBitsStr.append(lengthBits.testBit(i) ? '1' : '0');
+    }
+    qDebug() << "Extracted message length bits: " << lengthBitsStr;
 
-    QBitArray textBits(messageBitLength);
+    int messageBitLength = 0;
+    for (int i = 0; i < 24; ++i) {
+        messageBitLength |= (lengthBits.testBit(i) ? 1 : 0) << (23 - i);
+    }
+
+    qDebug() << "Decoded message bit length: " << messageBitLength;
+    int maxTextLength = messageBitLength;
+
+    QBitArray textBits(maxTextLength);
     int startIndex = 14;
-    int groupCount = (messageBitLength + param - 1) / param;
+    int groupCount = (maxTextLength + param - 1) / param;
 
     for (int i = 0; i < groupCount; i++) {
         int channelIndex = startIndex + i;
@@ -84,7 +96,7 @@ QString DecodingText::decoding(QImage img)
 
         for (int b = 0; b < param; b++) {
             int bitIndex = i * param + b;
-            if (bitIndex >= messageBitLength) break;
+            if (bitIndex >= maxTextLength) break;
 
             bool bit = (value >> b) & 1;
             textBits.setBit(bitIndex, bit);
@@ -98,8 +110,13 @@ QString DecodingText::decoding(QImage img)
     }
 
     QString decodedText = QString::fromUtf8(byteArray);
+
+    /*int nullCharIndex = decodedText.indexOf('\0');
+    if (nullCharIndex != -1) {
+        decodedText = decodedText.left(nullCharIndex);
+    }*/
+
+    qDebug() << "Decoded Text: " << decodedText;
+
     return decodedText;
 }
-
-
-
