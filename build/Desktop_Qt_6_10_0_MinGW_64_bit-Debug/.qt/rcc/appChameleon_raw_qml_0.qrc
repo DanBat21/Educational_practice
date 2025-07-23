@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Chameleon/">
-    <file alias="Main.qml">D:/Qt/cpp/projectsQt/Chameleon/Main.qml</file>
-    <file alias="DecodePage.qml">D:/Qt/cpp/projectsQt/Chameleon/DecodePage.qml</file>
-    <file alias="EncodePage.qml">D:/Qt/cpp/projectsQt/Chameleon/EncodePage.qml</file>
-  </qresource>
-</RCC>
-

@@ -4,8 +4,8 @@
 #include <QQmlContext>
 #include <Qstring>
 #include <QImage>
-#include "codingtext.h"
-#include "decodingtext.h"
+#include "encodertext.h"
+#include "decodertext.h"
 
 
 using namespace std;
@@ -56,8 +56,8 @@ public:
 private:
     QImage _image;
     int _availableSymbols = 0;
-    CodingText _coder;
-    DecodingText _decoder;
+    EncoderText _coder;
+    DecoderText _decoder;
     QString _codingText;
     QString _decodingText;
 

@@ -1,7 +1,0 @@
-module Chameleon
-typeinfo appChameleon.qmltypes
-prefer :/qt/qml/Chameleon/
-Main 1.0 Main.qml
-DecodePage 1.0 DecodePage.qml
-EncodePage 1.0 EncodePage.qml
-

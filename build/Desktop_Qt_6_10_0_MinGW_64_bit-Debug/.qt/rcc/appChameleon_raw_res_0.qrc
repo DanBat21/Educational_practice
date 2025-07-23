@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Chameleon/">
-    <file alias="images/forest.png">D:/Qt/cpp/projectsQt/Chameleon/images/forest.png</file>
-  </qresource>
-</RCC>
-

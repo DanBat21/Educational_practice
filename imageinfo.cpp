@@ -1,8 +1,4 @@
 #include "imageinfo.h"
-#include "codingtext.h"
-#include "decodingtext.h"
-
-
 
 ImageInfo::ImageInfo(QObject *parent)
     : QObject{parent}
@@ -68,7 +64,7 @@ bool ImageInfo::decodingAndDisplay() {
         return false;
     }
 
-    DecodingText decoder;
+    DecoderText decoder;
 
     QString decodedText = decoder.decoding(_image);
     setDecodingText(decodedText);
